@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyAppb</string>
+    <string-array name="Class">
+        <item>sy</item>
+        <item>ty</item>
+    </string-array>
+</resources>

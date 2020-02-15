@@ -1,0 +1,61 @@
+package sycs23;
+import java.sql.*;
+public class tablecreation {
+    public static void main(String[] args) {
+        String DB_URL = "jdbc:mysql://127.0.0.1:3306/empdb";
+        Connection conn = null;
+        Statement stmt = null;
+        try {
+            conn=DriverManager.getConnection(DB_URL,"root","scott");
+            System.out.println("connected");
+            stmt=conn.createStatement();
+//            Boolean rs = stmt.execute("create table info_1(name varchar(20),id int(10),phoneno int(10))");
+            stmt.execute("insert into info_1 values('champ',2,5252552)");
+            
+//            while(rs.next()) {
+//                System.out.println(rs.getString("ename"));
+//            }
+            
+    }
+        catch(Exception e){
+            System.out.println(e);
+        }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+nd open the template in the editor.
+ */
+package sycs23;
+import java.sql.*;
+public class Sycs23 {
+    public static void main(String[] args) {
+        String DB_URL = "jdbc:mysql://127.0.0.3306/empdb";
+        Connection conn = null;
+        Statement stmt = null;
+        try {
+            conn=DriverManager.getConnection(DB_URL,"root","scott");
+            System.out.println("connected");
+            stmt=conn.createStatement();
+            ResultSet rs = stmt.executeQuery("insert  into emp values(121,'keval',123456,20)");
+            
+            while(rs.next()) {
+                System.out.println(rs.getString("ename"));
+            }
+            
+    }
+        catch(Exception e){
+            System.out.println(e);
+        }
+    
+}
+}

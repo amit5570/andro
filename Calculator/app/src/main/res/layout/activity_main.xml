@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sycs38.calculator.MainActivity">
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:id="@+id/txt"
+     />
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:stretchColumns="*">
+    <TableRow>
+        <Button
+            android:text="7"
+            android:textSize="@dimen/textsize"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"/>
+        <Button
+            android:text="8"
+            android:textSize="@dimen/textsize"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"/>
+        <Button
+            android:text="9"
+            android:textSize="@dimen/textsize"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"/>
+        <Button
+            android:text="/"
+            android:textSize="@dimen/textsize"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="4"
+            android:textSize="@dimen/textsize"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"/>
+        <Button
+            android:text="5"
+            android:textSize="@dimen/textsize"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"/>
+        <Button
+            android:text="6"
+            android:textSize="@dimen/textsize"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"/>
+        <Button
+            android:text="X"
+            android:textSize="@dimen/textsize"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"/>
+    </TableRow>
+</TableLayout>
+</RelativeLayout>
